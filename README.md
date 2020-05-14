@@ -39,6 +39,7 @@ The applicable files in this repository for this project are:
 - Countries_WGS84.shp is the file used for geopandas
 - Restuarant_Reviews.tsv is the file used for sentiment analysis
 - coffee_rating_price.png is my visualization
+- dash_test.py is my Dash app with interactive visuals
 
 
 ## Libraries
