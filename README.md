@@ -45,7 +45,18 @@ The XGboost model turned out to be the most accurate at 98.2% accuracy for the t
  6. Price per ounce
  
 The confusion matrix: 
+
+
 ![](cm_great.png)
+
+
+The highest number of coffee growers were located in Ethiopia and Kenya, these two countries arrived in spot 11 and 9 on the list of important features.
+
+![](coffee_country_plot.png)
+
+## Business Recommendations
+
+With the use of machine learning models xgboost and nueral network MLP, models were created that have a very high accuracy of 98.18% to predict the top 5 features - body, flavor, aftertaste,acidity,aroma -  that contribute to a highly rated coffee bean. Of lesser importance, but still in the top 10, was price per ounce and the two top producing coffee countries, Ethiopia and Kenya. 
 
 
 
@@ -71,12 +82,11 @@ The applicable files in this repository for this project are:
 - playground.ipynb is a scratch pad file
 - kaggle_coffee_modified.csv is another coffee review dataset from Kaggle, it is NOT used in the analysis
 
-- cm_awful.png is the confusion matrix image
-- cm_great.png is the confusion matrix image
+- cm_awful.png and cm_great.png are confusion matrix images
 - Countries_WGS84.shx is the file used for geopandas
 - Countries_WGS84.shp is the file used for geopandas
 - Restuarant_Reviews.tsv is the file used for sentiment analysis
-- coffee_rating_price.png is my visualization
+- coffee_country_plot.png is my country map
 - dash_test.py is my Dash app with interactive visuals
 
 
@@ -94,5 +104,5 @@ The applicable files in this repository for this project are:
 
 
 
-## Extra
+## Delete This
 The goal of this project was to use the skills learned throughtout the Data Science coursework on a topic of my choosing and interest.  The project scope is thorough from start, source a unique dataset, to finish , display the results from modeling using maching learning on the web. 
