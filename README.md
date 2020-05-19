@@ -1,23 +1,58 @@
 
 
-# Data Science Capstone Project
+# Finding the Perfect Cup of Coffee
 
 
 
-## Executive Summary
+## Project Movitation
+ 
+A hot cup of coffee is a pretty wonderful way to start my day. It’s a small slice of heaven in a crazy, unpredictable world. Wouldn’t it be great to know what makes a cup of coffee <i>sublime</i> so as to never be disappointed?  Therein lies the beauty of machine learning to be able to figure out what features makes a coffee great (highly rated) and stand out from the crowd. This is useful information on a personal level and can also be used by coffee shops, baristas, restuarants and other coffee enthusiasts.
 
-The goal of this project was to use the skills learned throughtout the Data Science coursework on a topic of my choosing and interest.  The project scope is thorough from start, source a unique dataset, to finish , display the results from modeling using maching learning on the web. 
 
 
 <img src='https://media.giphy.com/media/cMPTAogPBRTIQ/giphy.gif'>
-<img scr='https://media.giphy.com/media/cMPTAogPBRTIQ/giphy.gif'>
+
+
+## Data Source
+
+Coffee is the second most consumed beverage IN THE WORLD (behind tea, but ahead of soda and beer), at a rate of about 2.25 billion cups a day (https://www.statista.com/statistics/292595/global-coffee-consumption/).  There are a variety of factors that make up the differences between coffee beans.  A non-exhaustive list of factors includes:
+ - Ratings for aroma, acidity, flavor, aftertaste, body, 
+ - Agtron score (an agtron machine reflects light on a sample of coffee to objectively assign a number for roast color)  
+ - price
+ - coffee bean origin
+ - roaster location
+ - altitude
+ - roast level
+ 
+The dataset for my work was sourced and scraped by me from the website www.coffeereviews.com. 
+ 
+
+## Methodology
+
+The OSEMN (Obtain, Scrub, Explore, Model, iNterpret) framework was followed for this project.  Data was scraped using BeautifulSoup and cleaned using pandas, NumPy and regex.  Visualizations were created using Matplotlib, Seaborn, Geopandas and Dash.  Machine learning (supervised) models were created using scikit-learn's logistic regression, random forest, random forest with SMOTE and GridSearchCV, and xgboost.  Additionally, neural network models using MLP were created to corroborate the findings from the one-layer classification models.  Interpretaion was completed by using the feature importance function returned by the model.  The results from feature importance - the top 6 features contributing to highly rated coffee beans - can be used by individual coffee drinkers wanting knowledge about the product they consume, by restuarants and coffee bars wanting the knowledge so as to serve coffee that is pleasing to their customers and for roasters, growers, distributors and buyers interested in navigating a highly lucrative industry into the 21st century with new environmental and social issues arising.
+
+
+## Findings
+
+Five thousand, five hundred and fifteen coffee reviews were scraped from the coffee review website.  Every coffee was assigned a rating by a coffee reviewer. The ratings started at 68 and increased all the way to 97.  One first glance, it would seem that the rating would simply be attributed to price per oz.  <coffee_rating_price.png here>  The growers per country was plotted on a world map using geopandas.  
+
+The XGboost model turned out to be the most accurate at 98.2% accuracy for the test data and 99.76% accurate for the train data. The small difference between the two accuracies indicates a small overfitting of the model. The top 6 features of a highly rated coffee (the top 8% of the data set with a rating of 95, 96 or 97) were:
+ 1. Aroma
+ 2. Flavor
+ 3. Body
+ 4. Aftertaste
+ 5. Acidity
+ 6. Price per ounce
+ 
+The confusion matrix: 
+![](cm_great.png)
+
 
 
 ## Applicable Files
 
 The applicable files in this repository for this project are:
 
-- ABSTRACT.md provides the Purpose, Findings, Signficance and Conclusion
 - README.md is this file
 
 - AN_coffee_reviews.csv is the data scraped from www.coffeereviews.com
@@ -47,14 +82,17 @@ The applicable files in this repository for this project are:
 
 ## Libraries
 
-- the usual: numpy and pandas
-- seaborn and matplotlib for plotting
-- scikit.learn classification models such as Logistic Regression, Random Forest, XGBoost
-- Standard.scaler
-- scikit.learn metrics, confusion matrices and classification reports
-- skikit.learn PCA 
-- time
-- scikit.learn StandardScaler() and train_test_split
+- NumPy and pandas
+- Seaborn and matplotlib for plotting
+- Scikit.learn classification models, metrics, confusion matrix, classification report, PCA
+- Scikit.learn StandardScaler(), train_test_split
+- Time
 - BeautifulSoup 
-- regex
+- Regex
 - keras, keras.models and .layers for neural network modeling
+- Dash app via Visual Studio Code
+
+
+
+## Extra
+The goal of this project was to use the skills learned throughtout the Data Science coursework on a topic of my choosing and interest.  The project scope is thorough from start, source a unique dataset, to finish , display the results from modeling using maching learning on the web. 
