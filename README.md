@@ -6,7 +6,7 @@
 
 ## Project Movitation
  
-A hot cup of coffee is a pretty wonderful way to start my day. It’s a small slice of heaven in a crazy, unpredictable world. Wouldn’t it be great to know what makes a cup of coffee <i>sublime</i> so as to never be disappointed?  Therein lies the beauty of machine learning to be able to figure out what features makes a coffee great (highly rated) and stand out from the crowd. This is useful information on a personal level and can also be used by coffee shops, baristas, restuarants and other coffee enthusiasts.
+A hot cup of coffee is a pretty wonderful way to start my day. It’s a small slice of heaven in a crazy, unpredictable world. Wouldn’t it be great to know what makes a cup of coffee <i>sublime</i> so as to never be disappointed?  Therein lies the beauty of machine learning to be able to figure out which features make a coffee great (highly rated) and stand out from the crowd. This is useful information on a personal level and can also be used by coffee shops, baristas, restuarants and other coffee enthusiasts.
 
 
 
@@ -29,7 +29,10 @@ The dataset for my work was sourced and scraped by me from the website www.coffe
 
 ## Methodology
 
-The OSEMN (Obtain, Scrub, Explore, Model, iNterpret) framework was followed for this project.  Data was scraped using BeautifulSoup and cleaned using pandas, NumPy and regex.  Visualizations were created using Matplotlib, Seaborn, Geopandas and Dash.  Machine learning (supervised) models were created using scikit-learn's logistic regression, random forest, random forest with SMOTE and GridSearchCV, and xgboost.  Additionally, neural network models using MLP were created to corroborate the findings from the one-layer classification models.  Interpretaion was completed by using the feature importance function returned by the model.  The results from feature importance - the top 6 features contributing to highly rated coffee beans - can be used by individual coffee drinkers wanting knowledge about the product they consume, by restuarants and coffee bars wanting the knowledge so as to serve coffee that is pleasing to their customers and for roasters, growers, distributors and buyers interested in navigating a highly lucrative industry into the 21st century with new environmental and social issues arising.
+The OSEMN (Obtain, Scrub, Explore, Model, iNterpret) framework was followed for this project.  Data was scraped using BeautifulSoup and cleaned using pandas, NumPy and regex.  Visualizations were created using Matplotlib, Seaborn, Geopandas and Dash.  Machine learning (supervised) models were created using scikit-learn's logistic regression, random forest, random forest with SMOTE and GridSearchCV, and xgboost.  Additionally, neural network models using MLP were created to corroborate the findings from the one-layer classification models.  Interpretaion was completed by using the feature importance function returned by the model.  The results from feature importance - the top 6 features contributing to highly rated coffee beans - can be used by individual coffee drinkers wanting knowledge about the product they consume, by restuarants and coffee bars wanting the knowledge so as to serve coffee that is pleasing to their customers and for roasters, growers, distributors and buyers interested in navigating a highly lucrative industry into the 21st century with new environmental and social issues arising.  Finally, an interactive plot was produced using a DASH app on Visual Studio Code.
+
+
+![](DASH.png)
 
 
 ## Findings
@@ -44,7 +47,20 @@ The XGboost model turned out to be the most accurate at 98.2% accuracy for the t
  5. Acidity
  6. Price per ounce
  
-The confusion matrix: 
+ 
+ ![](coffee_xgb.png)
+ 
+ 
+
+Interestingly, when the dataset was modeled using MLP (the python library Kera's multi-layer perceptron) it resulted in a accuracy of 98.18% and the top 6 features as follows:
+ 1. Body
+ 2. Flavor
+ 3. Aftertaste
+ 4. Acidity
+ 5. Aroma
+ 6. Ethiopia
+ 
+Here is the resulting confusion matrix: 
 
 
 ![](cm_great.png)
@@ -59,9 +75,14 @@ The highest number of coffee growers were located in Ethiopia and Kenya, these t
 
 
 
+
+
+
 ## Business Recommendations
 
-With the use of machine learning models xgboost and nueral network MLP, models were created that have a very high accuracy of 98.18% to predict the top 5 features - body, flavor, aftertaste,acidity,aroma -  that contribute to a highly rated coffee bean. Of lesser importance, but still in the top 10, was price per ounce and the two top producing coffee countries, Ethiopia and Kenya. 
+Two machine learning algorithms (xgboost and mlp) applied to a unique dataset of coffee reviews generate a model to predict with 98.2% accuracy the 5 important features in determining if a coffee bean is great or not.  The top five features were indentica in both models only differeing in the order: acidity, aftertaste, aroma, body and flavor. 
+
+This knowledge is relevant and useful to individal coffee drinkers looking for high quality product, as well as, hotel/resturant/coffee show owners and baristas.  The information gleaned from machine learning models can be used to provide high quality coffee to customers that they will love to keep them coming back and to continue to grow your business. This is especially useful as the world grapples with affects of global warming on crops. 
 
 
 
@@ -92,7 +113,14 @@ The applicable files in this repository for this project are:
 - Countries_WGS84.shp is the file used for geopandas
 - Restuarant_Reviews.tsv is the file used for sentiment analysis
 - coffee_country_plot.png is my country map
+- coffee_xgb.png is my feature importance graph from the XGBoost model
 - dash_test.py is my Dash app with interactive visuals
+
+
+## My Additional Resources
+Here is a link to my blog which describes my project journey:  https://annikanoren.blogspot.com/2020/05/using-data-science-to-find-my-perfect.html
+
+Here is a link to my youtube business presentation: https://www.youtube.com/watch?v=-ULFdzGPJWM&feature=youtu.be
 
 
 ## Libraries
