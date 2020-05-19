@@ -52,7 +52,12 @@ The confusion matrix:
 
 The highest number of coffee growers were located in Ethiopia and Kenya, these two countries arrived in spot 11 and 9 on the list of important features.
 
+
+
 ![](coffee_country_plot.png)
+
+
+
 
 ## Business Recommendations
 
