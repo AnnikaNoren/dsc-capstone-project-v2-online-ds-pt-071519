@@ -15,7 +15,7 @@ A hot cup of coffee is a pretty wonderful way to start my day. It’s a small sl
 
 ## Data Source
 
-Coffee is the second most consumed beverage IN THE WORLD (behind tea, but ahead of soda and beer), at a rate of about 2.25 billion cups a day (https://www.statista.com/statistics/292595/global-coffee-consumption/).  There are a variety of factors that make up the differences between coffee beans.  A non-exhaustive list of factors includes:
+Coffee is the second most consumed beverage IN THE WORLD (behind tea, but ahead of soda and beer), at a rate of about 2.25 billion cups a day (footnote 1).  There are a variety of factors that make up the differences between coffee beans.  A non-exhaustive list of factors includes:
  - Ratings for aroma, acidity, flavor, aftertaste, body, 
  - Agtron score (an agtron machine reflects light on a sample of coffee to objectively assign a number for roast color)  
  - price
@@ -139,3 +139,6 @@ Here is a link to my youtube business presentation: https://www.youtube.com/watc
 - keras, keras.models and .layers for neural network modeling
 - Dash app via Visual Studio Code
 
+
+## Footnote
+1. (https://www.statista.com/statistics/292595/global-coffee-consumption/)
