@@ -10,7 +10,7 @@ The goal of this project was to use the skills learned throughtout the Data Scie
 
 
 <img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/halfway-there.gif'>
-<img scr='https://gph.is/2cHfQLm'>
+<img scr='https://media.giphy.com/media/cMPTAogPBRTIQ/giphy.gif'>
 
 
 ## Applicable Files
