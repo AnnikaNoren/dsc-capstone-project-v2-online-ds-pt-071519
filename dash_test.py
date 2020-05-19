@@ -71,9 +71,9 @@ app.layout = html.Div(children=[
     # html.Div(id='hello-world'),
     html.H2(''),
     html.H3('The x-axis remains constant with the Rating feature'),
-    html.H3('Feature to Sort'),
+    html.H3('Select the feature to sort'),
     dropdown_color,
-    html.H3('Choose the y-axis'),
+    html.H3('Select the y-axis'),
     dropdown_y,
     # dcc.Graph(figure=pretty_coffee),
     html.Div(id='coffee-graph')

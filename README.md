@@ -9,6 +9,8 @@
 The goal of this project was to use the skills learned throughtout the Data Science coursework on a topic of my choosing and interest.  The project scope is thorough from start, source a unique dataset, to finish , display the results from modeling using maching learning on the web. 
 
 
+<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/halfway-there.gif'>
+
 
 ## Applicable Files
 
