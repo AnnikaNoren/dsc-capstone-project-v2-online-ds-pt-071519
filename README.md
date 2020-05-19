@@ -95,27 +95,27 @@ This knowledge is relevant and useful to individal coffee drinkers looking for h
 The applicable files in this repository for this project are:
 
 - README.md is this file
-
+### Data
 - AN_coffee_reviews.csv is the data scraped from www.coffeereviews.com
 - part1_cleaned_coffee_reviews.csv is the first of three phases of cleaning
 - part2_cleaned_coffee_reviews.csv is the second of three phases of cleaning
 - cleaned_coffee_reviews.csv is the final cleaned dataset used to work with
-
+### Scraping, Cleaning, Modeling, Visualizing, Applying Neural Network and Sentiment Analysis
 - scraping_coffee_reviews.ipynb contains the code used to scrape the website for coffee reviews
 - cleaning_coffee_reviews.ipynb contains the code used to clean the dataset
 - modeling_coffee_reviews.ipynb contains the code used to model the dataset
 - visualizing_coffee_reviews.ipynb contains the code used to visualize the dataset
 - neural_network_modeling_coffee_reviews.ipynb contains the code used to model using neural networks
 - sentiment_analysis_coffee_reviews.ipynb contains the code used to perform sentiment analysis on the data
-
+### Resources
 - AK_scraping_demo.ipynb is a demo file from Abhineet Kulkarni
 - playground.ipynb is a scratch pad file
 - kaggle_coffee_modified.csv is another coffee review dataset from Kaggle, it is NOT used in the analysis
-
+- Restuarant_Reviews.tsv is the file used for sentiment analysis
+### Graphs and Plots
 - cm_awful.png and cm_great.png are confusion matrix images
 - Countries_WGS84.shx is the file used for geopandas
 - Countries_WGS84.shp is the file used for geopandas
-- Restuarant_Reviews.tsv is the file used for sentiment analysis
 - coffee_country_plot.png is my country map
 - coffee_xgb.png is my feature importance graph from the XGBoost model
 - dash_test.py is my Dash app with interactive visuals
@@ -139,7 +139,3 @@ Here is a link to my youtube business presentation: https://www.youtube.com/watc
 - keras, keras.models and .layers for neural network modeling
 - Dash app via Visual Studio Code
 
-
-
-## Delete This
-The goal of this project was to use the skills learned throughtout the Data Science coursework on a topic of my choosing and interest.  The project scope is thorough from start, source a unique dataset, to finish , display the results from modeling using maching learning on the web. 
