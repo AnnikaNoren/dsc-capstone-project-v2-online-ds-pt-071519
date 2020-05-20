@@ -41,7 +41,7 @@ The OSEMN (Obtain, Scrub, Explore, Model, iNterpret) framework was followed for 
 
 ## Findings
 
-Five thousand, five hundred and fifteen coffee reviews were scraped from the coffee review website.  Every coffee was assigned a rating by a coffee reviewer. The ratings started at 68 and increased all the way to 97.  At first glance, it would seem that the rating would simply be attributed to price per oz and will see the model results shortly.
+Five thousand, five hundred and fifteen coffee reviews were scraped from the coffee review website.  Every coffee was assigned a rating by a coffee reviewer. The ratings started at 68 and increased all the way to 97.  At first glance, it would seem that the rating (y-axis) would simply be attributed to price per oz (x-axis) and will see the model results shortly if price is truly the most important feature or not.
 
 
 
@@ -49,7 +49,7 @@ Five thousand, five hundred and fifteen coffee reviews were scraped from the cof
 
   
 
-The XGboost model turned out to be the most accurate at 98.2% accuracy for the test data and 99.76% accurate for the train data. The small difference between the two accuracies indicates a small overfitting of the model. The top 6 features of a highly rated coffee (the top 8% of the data set with a rating of 95, 96 or 97) were:
+The XGboost model turned out to be the most accurate at 98.2% accuracy for the test data and 99.76% accurate for the training data. The small difference between the two accuracies indicates a small overfitting of the model. The top 6 features of a highly rated coffee (the top 8% of the data set with a rating of 95, 96 or 97) were:
  1. Aroma
  2. Flavor
  3. Body
@@ -76,7 +76,7 @@ And the resulting confusion matrix:
 ![](cm_great.png)
 
 
-The highest number of coffee growers were located in Ethiopia and Kenya; these two countries arrived in spot 11 and 9 on the list of important features.  The map was created using GeoPandas.
+The highest number of coffee growers are located in Ethiopia and Kenya; these two countries arrived in spot 11 and 9 on the list of important features.  The map was created using GeoPandas.
 
 
 
@@ -87,7 +87,7 @@ The highest number of coffee growers were located in Ethiopia and Kenya; these t
 
 ### Success Criteria
 
-The xgboost model and MLP model both delivered a high test accuracy of 98.2%, which is better than all the other models.  Here is a chart comparing the classification models test and train accuracies to each other: 
+The xgboost model and MLP model both delivered a high test accuracy of 98.2%, which is better than all the other models.  Here is a chart comparing the classification models testing and training accuracies to each other: 
 
 
  
@@ -104,7 +104,7 @@ And here is the result of MLP:
 
 ## Business Recommendations
 
-Two machine learning algorithms (xgboost and mlp) applied to a unique dataset of coffee reviews generated models to predict with 98.2% accuracy the 5 important features in determining if a coffee bean is great or not.  The top five features were indentical for both models only differing in the order: acidity, aftertaste, aroma, body and flavor. 
+Two machine learning algorithms (xgboost and mlp) applied to a unique dataset of coffee reviews generated models to predict with 98.2% accuracy the 5 most important features in determining if a coffee bean is great or not.  The top five features were identical for both models only differing in the order: acidity, aftertaste, aroma, body and flavor. 
 
 This knowledge is relevant and useful to individal coffee drinkers looking for high quality product, as well as, hotels, restaurants, coffee shop owners and baristas.  The information gleaned from machine learning models can be used to provide high quality coffee to customers that they will love to keep them coming back and to continue to grow business. This information 
 can alse be applied to finding new coffee beans as the world grapples with affects of global warming, land sustainability and dealing with pests that destroy coffee crops. 
