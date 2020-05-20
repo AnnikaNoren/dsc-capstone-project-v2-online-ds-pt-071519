@@ -6,7 +6,7 @@
 
 ## Project Movitation
  
-A hot cup of coffee is a pretty wonderful way to start my day. It’s a small slice of heaven in a crazy, unpredictable world. Wouldn’t it be great to know what makes a cup of coffee <i>sublime</i> so as to never be disappointed?  Therein lies the beauty of machine learning to be able to figure out which features make a coffee great (highly rated) and stand out from the crowd. This is useful information on a personal level and can also be used by coffee shops, baristas, restuarants and other coffee enthusiasts.
+A hot cup of coffee is a pretty wonderful way to start my day. It’s a small slice of heaven in a crazy, unpredictable world. Wouldn’t it be great to know what makes a cup of coffee <i>sublime</i> so as to never be disappointed?  Therein lies the beauty of machine learning to be able to figure out which features make a coffee great (highly rated) and stand out from the crowd. This is useful information on a personal level and can also be used by coffee shops, baristas, hotels, restaurants and other coffee enthusiasts.
 
 
 
@@ -24,7 +24,7 @@ Coffee is the second most consumed beverage IN THE WORLD (behind tea, but ahead 
  - altitude
  - roast level
  
-The dataset for my project scraped by me from the website www.coffeereviews.com. 
+The dataset for this project scraped by me from the website www.coffeereviews.com using BeautifulSoup. 
  
 
 ## Methodology
@@ -41,7 +41,13 @@ The OSEMN (Obtain, Scrub, Explore, Model, iNterpret) framework was followed for 
 
 ## Findings
 
-Five thousand, five hundred and fifteen coffee reviews were scraped from the coffee review website.  Every coffee was assigned a rating by a coffee reviewer. The ratings started at 68 and increased all the way to 97.  One first glance, it would seem that the rating would simply be attributed to price per oz.  <coffee_rating_price.png here>  The growers per country was plotted on a world map using geopandas.  
+Five thousand, five hundred and fifteen coffee reviews were scraped from the coffee review website.  Every coffee was assigned a rating by a coffee reviewer. The ratings started at 68 and increased all the way to 97.  At first glance, it would seem that the rating would simply be attributed to price per oz and will see the model results shortly.
+
+
+
+![](coffee_price4.png)  
+
+  
 
 The XGboost model turned out to be the most accurate at 98.2% accuracy for the test data and 99.76% accurate for the train data. The small difference between the two accuracies indicates a small overfitting of the model. The top 6 features of a highly rated coffee (the top 8% of the data set with a rating of 95, 96 or 97) were:
  1. Aroma
@@ -56,7 +62,7 @@ The XGboost model turned out to be the most accurate at 98.2% accuracy for the t
  
  
 
-Interestingly, when the dataset was modeled using MLP (the python library Kera's multi-layer perceptron) it resulted in a accuracy of 98.18% and the top 6 features as follows:
+Interestingly, when the dataset was modeled using MLP (the python library Kera's multi-layer perceptron algoritgm) it resulted in a accuracy of 98.18% and the top 6 features are as follows:
  1. Body
  2. Flavor
  3. Aftertaste
@@ -64,13 +70,13 @@ Interestingly, when the dataset was modeled using MLP (the python library Kera's
  5. Aroma
  6. Ethiopia
  
-Here is the resulting confusion matrix: 
+And the resulting confusion matrix: 
 
 
 ![](cm_great.png)
 
 
-The highest number of coffee growers were located in Ethiopia and Kenya, these two countries arrived in spot 11 and 9 on the list of important features.
+The highest number of coffee growers were located in Ethiopia and Kenya; these two countries arrived in spot 11 and 9 on the list of important features.  The map was created using GeoPandas.
 
 
 
@@ -81,7 +87,7 @@ The highest number of coffee growers were located in Ethiopia and Kenya, these t
 
 ### Success Criteria
 
-The xgboost model and MLP model both delivered a high test and train accuracy of 98.2%, which is better than all the other models.  Here is a chart comparing the classification models test and train accuracies to each other: 
+The xgboost model and MLP model both delivered a high test accuracy of 98.2%, which is better than all the other models.  Here is a chart comparing the classification models test and train accuracies to each other: 
 
 
  
@@ -98,9 +104,10 @@ And here is the result of MLP:
 
 ## Business Recommendations
 
-Two machine learning algorithms (xgboost and mlp) applied to a unique dataset of coffee reviews generate a model to predict with 98.2% accuracy the 5 important features in determining if a coffee bean is great or not.  The top five features were indentica in both models only differeing in the order: acidity, aftertaste, aroma, body and flavor. 
+Two machine learning algorithms (xgboost and mlp) applied to a unique dataset of coffee reviews generated models to predict with 98.2% accuracy the 5 important features in determining if a coffee bean is great or not.  The top five features were indentical for both models only differing in the order: acidity, aftertaste, aroma, body and flavor. 
 
-This knowledge is relevant and useful to individal coffee drinkers looking for high quality product, as well as, hotel/resturant/coffee show owners and baristas.  The information gleaned from machine learning models can be used to provide high quality coffee to customers that they will love to keep them coming back and to continue to grow your business. This is especially useful as the world grapples with affects of global warming on crops. 
+This knowledge is relevant and useful to individal coffee drinkers looking for high quality product, as well as, hotels, restaurants, coffee shop owners and baristas.  The information gleaned from machine learning models can be used to provide high quality coffee to customers that they will love to keep them coming back and to continue to grow business. This information 
+can alse be applied to finding new coffee beans as the world grapples with affects of global warming, land sustainability and dealing with pests that destroy coffee crops. 
 
 
 
@@ -109,6 +116,7 @@ This knowledge is relevant and useful to individal coffee drinkers looking for h
 The applicable files in this repository for this project are:
 
 - README.md is this file
+
 ### Data
 - AN_coffee_reviews.csv is the data scraped from www.coffeereviews.com
 - part1_cleaned_coffee_reviews.csv is the first of three phases of cleaning
@@ -133,12 +141,14 @@ The applicable files in this repository for this project are:
 - coffee_country_plot.png is my country map
 - coffee_xgb.png is my feature importance graph from the XGBoost model
 - dash_test.py is my Dash app with interactive visuals
+- DASH.png, coffee_price4.png are screen shot photos
+- class_accuracy.png and mpl_accuracy.png are screen shot photos of the accuracy graphs from MLP
 
 
 ## My Additional Resources
 Here is a link to my blog which describes my project journey:  https://annikanoren.blogspot.com/2020/05/using-data-science-to-find-my-perfect.html
 
-Here is a link to my youtube business presentation: https://www.youtube.com/watch?v=-ULFdzGPJWM&feature=youtu.be
+And a link to my youtube business presentation: https://www.youtube.com/watch?v=-ULFdzGPJWM&feature=youtu.be
 
 
 ## Libraries
