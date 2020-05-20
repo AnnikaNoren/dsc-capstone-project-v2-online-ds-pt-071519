@@ -24,7 +24,7 @@ Coffee is the second most consumed beverage IN THE WORLD (behind tea, but ahead 
  - altitude
  - roast level
  
-The dataset for my work was sourced and scraped by me from the website www.coffeereviews.com. 
+The dataset for my project scraped by me from the website www.coffeereviews.com. 
  
 
 ## Methodology
@@ -79,8 +79,20 @@ The highest number of coffee growers were located in Ethiopia and Kenya, these t
 
 
 
+### Success Criteria
+
+The xgboost model and MLP model both delivered a high test and train accuracy of 98.2%, which is better than all the other models.  Here is a chart comparing the classification models test and train accuracies to each other: 
 
 
+ 
+![](class_accuracy.png)
+
+
+
+And here is the results of MLP:
+
+
+![](mlp.accuracy.png)
 
 ## Business Recommendations
 
