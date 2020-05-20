@@ -89,10 +89,10 @@ The xgboost model and MLP model both delivered a high test and train accuracy of
 
 
 
-And here is the results of MLP:
+And here is the result of MLP:
 
 
-![](mlp.accuracy.png)
+![](mlp_accuracy.png)
 
 
 
