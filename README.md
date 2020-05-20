@@ -94,6 +94,8 @@ And here is the results of MLP:
 
 ![](mlp.accuracy.png)
 
+
+
 ## Business Recommendations
 
 Two machine learning algorithms (xgboost and mlp) applied to a unique dataset of coffee reviews generate a model to predict with 98.2% accuracy the 5 important features in determining if a coffee bean is great or not.  The top five features were indentica in both models only differeing in the order: acidity, aftertaste, aroma, body and flavor. 
