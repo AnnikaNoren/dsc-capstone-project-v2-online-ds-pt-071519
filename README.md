@@ -1,7 +1,6 @@
 
 
-# Finding the Perfect Cup of Coffee
-
+# Finding the Perfect Cup of Coffee, May 2020
 
 
 ## Project Movitation
